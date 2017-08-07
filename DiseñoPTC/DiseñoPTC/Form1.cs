@@ -19,8 +19,12 @@ namespace DiseñoPTC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormularioPrincipal FormP = new FormularioPrincipal();
+           /* FormularioPrincipal FormP = new FormularioPrincipal();
             FormP.Show();
+            this.Hide(); */
+
+            Conferencista FormC = new Conferencista();
+            FormC.Show();
             this.Hide();
         }
     }

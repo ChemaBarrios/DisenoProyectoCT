@@ -16,5 +16,35 @@ namespace DiseñoPTC
         {
             InitializeComponent();
         }
+
+        private void radioButtonAConf_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonAConf.Checked == true)
+            {
+                comboBox1.Enabled = false;
+                label1.Text = "Seleccion de conferencista para modificar o eliminar ";
+                button1.Text = "Añadir conferencista";    
+            }
+        }
+
+        private void radioButtonMConf_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonMConf.Checked == true)
+            {
+                comboBox1.Enabled = true;
+                label1.Text = "Seleccione conferencista a modificar";
+                button1.Text = "Modificar datos de conferencista";
+            }
+        }
+
+        private void radioButtonEConf_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonEConf.Checked == true)
+            {
+                comboBox1.Enabled = true;
+                label1.Text = "Seleccione conferencista a eliminar";
+                button1.Text = "Eliminar conferencista";
+            }
+        }
     }
 }
